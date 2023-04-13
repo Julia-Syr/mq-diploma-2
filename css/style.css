@@ -228,29 +228,31 @@
   }
 
   .trend-container {
+    min-height: 320px;
     display: flex;
     flex-direction: row;
     margin-top: 27px;
-    align-items: end;
   }
   
   .trend-article {
     width: calc(100% - 15px/4);
-    min-height: 320px;
-  } 
+    display: flex;
+  }
 
   .trend-article:nth-child(-n + 3) {
     margin-right: 5px;
   }
 
-  .trend-article-garden, .trend-article-cheese, .trend-article-mountain, .trend-article-lemons {
-    min-height: 320px; 
+  .trend-article-garden, 
+  .trend-article-cheese, 
+  .trend-article-mountain, 
+  .trend-article-lemons {
     background-color: #000000;
     position: relative;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: end;
+    align-items: flex-end; 
     justify-content: center;
   }
 
@@ -293,7 +295,7 @@
     border: 3px solid #b59f5b;
     padding: 33px 17px 33px 32px;
     z-index: 1;
-    margin-bottom: 16px;
+    margin: 16px 5px;
   }
 
   .container {
@@ -826,13 +828,9 @@
     margin-top: 15px;
   }
 
-  .trend-article-garden, .trend-article-cheese, .trend-article-mountain, .trend-article-lemons {
-    min-height: 248px;
-  } 
-
   .trend-article {
     min-height: 248px;
-  }
+  } 
 
   .trend-article-title, 
   .product-content-title, 
